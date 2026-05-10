@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Dimas Putra.A · Markdown Style CV</title>
+    <style>
+        * { font-family: monospace; font-size: 1em; border: 0; margin: 0; padding: 0; list-style: none; font-weight: normal; }
+        h1, h2, h3, h4, h5, h6, ul, ol, p, pre { margin-bottom: 1em }
+        strong, b { font-weight: bold }
+        em, i { font-style: italic }
+        strong::before, strong::after, b::before, b::after { content: "**" }
+        em::before, em::after, i::before, i::after { content: "_" }
+        pre, code { background: #fafafa; color:#000 }
+        pre { overflow:auto }
+        pre::before, pre::after { content:""; display: block }
+        code::before, code::after { content: ""; background: #fff }
+        pre code::before, pre code::after { content: "" }
+        ol li { margin-left: 4ex; }
+        ul li { margin-left: 3ex; }
+        ol li { list-style: decimal outside }
+        h1, h2, h3, h4, h5, h6 { color:#900 }
+        h1 code, h2 code, h3 code, h4 code, h5 code, h6 code { background: #fff }
+        h1::before { content: "# "; color:#09a }
+        h2::before { content: "## "; color:#09a }
+        h3::before { content: "### "; color:#09a }
+        h4::before { content: "#### "; color:#09a }
+        h5::before { content: "##### "; color:#09a }
+        h6::before { content: "###### "; color:#09a }
+        ul li::before { content: "* "; display:block; margin-left:-3ex; color: #fb0; float:left }
+        body { width: 80ex; margin: 1em auto; background: #fff; color: #111; transition: background 0.2s, color 0.2s; }
+        a { text-decoration: none; color: #06c; }
+        a:hover { color:#f00 }
+        a::before { content: "[" }
+        a::after { content: "]" }
+        @media print {
+            body { width:auto; font-size:10pt; background: white; color: black; }
+            a::before, a::after { content: ""; }
+        }
+        blockquote {
+            border-left: 2px solid #09a;
+            padding-left: 1em;
+            margin-left: 0;
+            color: #555;
+        }
+        blockquote::before { content: "> "; color: #09a; float: left; margin-left: -2.5ex; }
+        hr {
+            border: none;
+            margin: 1.5em 0;
+        }
+        hr::before { content: "---"; color: #ccc; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 1em; }
+        th, td { border: 1px solid #ddd; padding: 0.4em 1em; text-align: left; }
+        th { font-weight: bold; background: #fafafa; }
+        th::before { content: "| "; color: #09a; }
+        .badge {
+            display: inline-block;
+            border: 1px solid #09a;
+            color: #09a;
+            padding: 0 0.5em;
+            margin: 0.1em;
+            font-size: 0.9em;
+        }
+        .badge::before { content: ""; }
+        .badge::after  { content: ""; }
+        @media (prefers-color-scheme: dark) {
+            body { background: #111; color: #ccc; }
+            pre, code { background: #1a1a1a; color: #eee; }
+            h1,h2,h3,h4,h5,h6 { color: #f66; }
+            a:hover { color: #f66; }
+            a { color: #8cf; }
+            th { background: #1f1f1f; }
+            th, td { border-color: #333; }
+            blockquote { color: #bbb; border-left-color: #f66; }
+        }
+        h1 span.cursor::after {
+            content: "_";
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        ul ul li::before { content: "* "; display: block; margin-left: -3ex; color: #fb0; float: left; }
+        ul ul ul li::before { content: "* "; display: block; margin-left: -3ex; color: #fb0; float: left; }
+        li { clear: both; }
+        code { background: #fafafa; padding: 0.1em 0.3em; border-radius: 4px; font-size: 0.95em; }
+        @media (prefers-color-scheme: dark) {
+            code { background: #2a2a2a; color: #f0f0f0; }
+            h1 code, h2 code, h3 code, h4 code, h5 code, h6 code { background: #1e1e1e; }
+        }
+        .badge-new {
+            display: inline-block;
+            background: #fb0;
+            color: #111;
+            font-size: 0.7rem;
+            padding: 0.1rem 0.5rem;
+            border-radius: 12px;
+            font-weight: bold;
+            margin-left: 0.5ex;
+            vertical-align: middle;
+        }
+        .badge-new::before, .badge-new::after { content: ""; }
+    </style>
+</head>
+<body>
+
+<h1 id="dimas_putra_a">Dimas Putra.A</h1>
+
+<ul>
+    <li>2025/12 - 2026/05: Learn coding and create projects</li>
+</ul>
+
+<h2 id="stuff_i_do">Stuff I Do</h2>
+
+<ul>
+    <li>Package Modules
+        <ul>
+            <li>NPM
+                <ul>
+                    <li>auth-a2f <a href="https://www.npmjs.com/package/auth-a2f">TOTP &amp; 2FA Management</a></li>
+                    <li>wire-vpn <a href="https://www.npmjs.com/package/wire-vpn">Node-based VPN interface</a></li>
+                    <li>velox-database <a href="https://www.npmjs.com/package/velox-database">High-performance encrypted DB</a></li>
+                    <li>h3-stress/guard <a href="https://www.npmjs.com/package/h3-stress">HTTP/3 Security &amp; Stress Testing</a></li>
+                </ul>
+            </li>
+            <li>PyPI
+                <ul>
+                    <li>velox-database <a href="https://pypi.org/project/velox-database/">Python port of VeloxDB</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>Research &amp; Algorithms
+        <ul>
+            <li>LOX-617 <strong>[New]</strong>
+                <ul>
+                    <li>A custom cryptographic algorithm designed for multi-layered security.</li>
+                    <li>Upcoming releases: <code>npm</code>, <code>cargo</code> (Rust), and <code>crypto-lib</code>.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>Systems &amp; OS
+        <ul>
+            <li>Larch OS <a href="#">Educational OS built with C/C++ &amp; Rust</a></li>
+        </ul>
+    </li>
+</ul>
+
+<h2 id="education">Education &amp; Learning</h2>
+
+<ul>
+    <li>9th Grade Student, Middle School (Bogor, Indonesia)
+        <ul>
+            <li>Currently graduating and transitioning to Vocational High School (SMK).</li>
+            <li>Focusing on Software Engineering (RPL) or Network Engineering (TKJ).</li>
+        </ul>
+    </li>
+    <li>Full Stack Developer &amp; Network Engineer
+        <ul>
+            <li>Studied Low-level Systems, Backend Architecture, and Cryptography.</li>
+            <li>Proficient in JavaScript, TypeScript, Node.js, C, C++, Rust, PHP, Go, and Python.</li>
+        </ul>
+    </li>
+    <li>Cybersecurity &amp; Encryption Research
+        <ul>
+            <li>Deep dive into AST-based code obfuscation and multi-layered encryption (AES, ChaCha20).</li>
+            <li>Independent study on network protocols and stress testing.</li>
+        </ul>
+    </li>
+    <li>Languages
+        <ul>
+            <li>Native Indonesian.</li>
+            <li>Technical English for documentation and programming.</li>
+        </ul>
+    </li>
+</ul>
+     
+<div style="margin-top: 2rem; border-top: 1px dashed #ccc; padding-top: 1rem; font-size: 0.85rem; text-align: center; opacity: 0.7;">
+</div>
+</body>
+</html>
